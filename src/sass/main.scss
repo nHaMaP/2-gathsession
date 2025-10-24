@@ -1,6 +1,6 @@
 
 
-                                                    /* EJEMPLOS DE USO */
+                                                    /* EXAMPLES OF USE */
 
 @use './abstracts/abstracts' as abs;          //namespace abs       --> color: abs.$primary-color // @include abs.center-flex;
 @use './base/base' as base;                   //namespace base      --> @include base.some-mixin;
