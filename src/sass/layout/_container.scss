@@ -3,16 +3,21 @@
 
 
 .container {
-    max-width: 1440px;
-    min-width: 1440px;
-    height: 1080px;
+    max-width: 1920px;
+    min-width: 1920px;
+    height: 1000px;
     margin-left: auto;
     margin-right: auto;
 
     /* -- Background -- */
     background-color: v.$black ;
-    /* -- Reset List --*/
+    background-image: url('../../img/backgroundcontent.png');
+    background-repeat: no-repeat;
+    background-size: 960px;
+    background-position: 1033px 111px;
+
     
+    /* -- Reset List --*/
     ul {
         @include v.reset_ul();
     }

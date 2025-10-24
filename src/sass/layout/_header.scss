@@ -6,13 +6,14 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 96px;
 
     figure {
 
         img {
             width: 235px;
             height: 45px;
-            margin-left: 40px; //adjusted from 160px Figma
+            margin-left: 150px; //adjusted from 160px Figma
         }
     }
 }
