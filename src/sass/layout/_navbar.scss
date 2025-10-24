@@ -1,0 +1,64 @@
+
+@use '../abstracts/abstracts' as v;
+
+.menu {
+    ul {
+        display: flex;
+        gap: 48px;
+
+        li {
+
+            a {
+                font-family: v.$fontBase;
+                font-weight: 400;
+                font-style: normal;
+                font-size: 16px; //adjusted from 18px Figma
+                text-decoration: none;
+                color: v.$grey;
+            }
+
+            &:hover a {
+                color:v.$white;
+            }
+
+            &:last-child {
+                margin-right: 200px; //adjusted from 240px Figma
+            }
+
+            &:hover::after {
+                content: "";
+                width: 50%;
+                height: 3px;
+                display: flex;
+                flex-direction: column;
+                margin-top: 5px;
+                background-color: v.$red;
+                border-radius: 5px;
+            }
+
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

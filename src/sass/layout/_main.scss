@@ -1,0 +1,99 @@
+@use '../abstracts/abstracts' as v;
+
+.title {
+
+    margin-left: 80px;
+    width: 784px;
+    margin-bottom: 80px;
+
+    article {
+      
+
+        h1 {
+            font-family: v.$fonTitle;
+            font-weight: 700;
+            font-style: bold;
+            font-size: 80px;
+            color: v.$white;
+        }
+    
+        h2 {
+            font-family: v.$fontBase;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 24px;
+            line-height: 40px;
+            color: v.$grey;
+    
+            width: 648px;
+            height: 120px;
+            margin-bottom: 50px;
+        }
+    }
+
+    .buttons {
+
+        width: 420px;
+        height: 60px;
+        margin-bottom: 80px;
+        
+        ul {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+           
+            li {
+
+                a {
+                    font-family: v.$fontBase;
+                    font-style: normal;
+                    font-size: 18px;
+                    color: v.$white;
+                    text-decoration: none;
+                }
+            }
+
+            li:first-child.alone a {
+                padding: 16px 69px 17px 68px;
+                background-color: v.$red;
+                border-radius: 15px 15px 15px 0;
+            }
+
+            li:first-child.alone:hover {
+                transform: rotateY(360deg);
+                transition: 0.7s ease-in;
+                box-shadow: 0 20px 30px v.$white;
+            }
+            
+            .friends {
+                width: 148px;
+                height: 40px;
+                justify-content: space-between;
+
+                &:hover {
+                    transform: translateX(30px);
+                    transition: 0.5s ease-in;
+                    text-shadow: 12px 10px 8px v.$red;
+                }
+
+                a { 
+                    width: 102px;
+                    height: 27px;
+                }
+
+                img {
+                    position: relative;
+                    top: 4px;
+                    right: 8px;
+                }
+            }
+        }
+    }
+
+    .offer {
+        display: flex;
+        visibility: hidden;
+    }
+
+}
+
